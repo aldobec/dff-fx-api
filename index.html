@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Freight Exchange - EuroWag DFF API</title>
+  <title>EuroWag DFF - Freight Exchange API</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta charset="UTF-8" />
@@ -1158,7 +1158,7 @@ margin-bottom: 20px;
       <div id="content">
         <div id="project">
           <div class="pull-left">
-            <h1>Freight Exchange - EuroWag DFF API</h1>
+            <h1>EuroWag DFF - Freight Exchange API</h1>
           </div>
           <div class="clearfix"></div>
         </div>
@@ -1167,7 +1167,10 @@ margin-bottom: 20px;
             <h2 id="welcome-to-apidoc">API and SDK Documentation</h2>
               <div class="app-desc">Version: 1.0.0</div>
             <hr>
-            <div>This is an integration API between Eurowag Digital Freight Forwarding system and external freight forwarding systems.</div>
+            <div><p>This is an integration API between Eurowag Digital Freight Forwarding system and external freight forwarding systems.</p>
+<hr />
+<p><strong>Endpoints are implemented on the side of DFF.</strong></p>
+</div>
           </div>
         </div>
         <div id="sections">
@@ -1287,8 +1290,8 @@ CompaniesApi *apiInstance = [[CompaniesApi alloc] init];
                             </div>
 
                             <div class="tab-pane" id="examples-Companies-postCompanies-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var FreightExchangeEuroWagDffApi = require('freight_exchange___euro_wag_dff_api');
-var defaultClient = FreightExchangeEuroWagDffApi.ApiClient.instance;
+                              <pre class="prettyprint"><code class="language-js">var EuroWagDffFreightExchangeApi = require('euro_wag_dff___freight_exchange_api');
+var defaultClient = EuroWagDffFreightExchangeApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1296,7 +1299,7 @@ api_key.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix['api_key'] = "Token"
 
-var api = new FreightExchangeEuroWagDffApi.CompaniesApi()
+var api = new EuroWagDffFreightExchangeApi.CompaniesApi()
 
 var apiKey = apiKey_example; // {String} API key provided by EuroWag
 
@@ -1687,8 +1690,8 @@ CompanyApi *apiInstance = [[CompanyApi alloc] init];
                             </div>
 
                             <div class="tab-pane" id="examples-Company-deleteCompany-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var FreightExchangeEuroWagDffApi = require('freight_exchange___euro_wag_dff_api');
-var defaultClient = FreightExchangeEuroWagDffApi.ApiClient.instance;
+                              <pre class="prettyprint"><code class="language-js">var EuroWagDffFreightExchangeApi = require('euro_wag_dff___freight_exchange_api');
+var defaultClient = EuroWagDffFreightExchangeApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -1696,7 +1699,7 @@ api_key.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix['api_key'] = "Token"
 
-var api = new FreightExchangeEuroWagDffApi.CompanyApi()
+var api = new EuroWagDffFreightExchangeApi.CompanyApi()
 
 var apiKey = apiKey_example; // {String} API key provided by EuroWag
 
@@ -2091,8 +2094,8 @@ OfferApi *apiInstance = [[OfferApi alloc] init];
                             </div>
 
                             <div class="tab-pane" id="examples-Offer-deleteOffer-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var FreightExchangeEuroWagDffApi = require('freight_exchange___euro_wag_dff_api');
-var defaultClient = FreightExchangeEuroWagDffApi.ApiClient.instance;
+                              <pre class="prettyprint"><code class="language-js">var EuroWagDffFreightExchangeApi = require('euro_wag_dff___freight_exchange_api');
+var defaultClient = EuroWagDffFreightExchangeApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -2100,7 +2103,7 @@ api_key.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix['api_key'] = "Token"
 
-var api = new FreightExchangeEuroWagDffApi.OfferApi()
+var api = new EuroWagDffFreightExchangeApi.OfferApi()
 
 var apiKey = apiKey_example; // {String} API key provided by EuroWag
 
@@ -2495,8 +2498,8 @@ OffersApi *apiInstance = [[OffersApi alloc] init];
                             </div>
 
                             <div class="tab-pane" id="examples-Offers-postOffers-0-javascript">
-                              <pre class="prettyprint"><code class="language-js">var FreightExchangeEuroWagDffApi = require('freight_exchange___euro_wag_dff_api');
-var defaultClient = FreightExchangeEuroWagDffApi.ApiClient.instance;
+                              <pre class="prettyprint"><code class="language-js">var EuroWagDffFreightExchangeApi = require('euro_wag_dff___freight_exchange_api');
+var defaultClient = EuroWagDffFreightExchangeApi.ApiClient.instance;
 
 // Configure API key authorization: api_key
 var api_key = defaultClient.authentications['api_key'];
@@ -2504,7 +2507,7 @@ api_key.apiKey = "YOUR API KEY"
 // Uncomment the following line to set a prefix for the API key, e.g. "Token" (defaults to null)
 //api_key.apiKeyPrefix['api_key'] = "Token"
 
-var api = new FreightExchangeEuroWagDffApi.OffersApi()
+var api = new EuroWagDffFreightExchangeApi.OffersApi()
 
 var apiKey = apiKey_example; // {String} API key provided by EuroWag
 
@@ -2792,7 +2795,7 @@ $(document).ready(function() {
           </div>
           <div id="generator">
             <div class="content">
-              Generated 2018-09-12T08:29:52.758Z
+              Generated 2018-09-12T12:28:48.646Z
             </div>
           </div>
       </div>
