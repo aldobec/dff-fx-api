@@ -698,12 +698,30 @@ margin-bottom: 20px;
     var defs = {}
             defs.Companies = {
   "type" : "object",
-  "required" : [ "items", "pageSize" ],
+  "required" : [ "items", "page", "pageCount", "pageSize", "totalItems" ],
   "properties" : {
     "pageSize" : {
       "type" : "integer",
       "example" : 20,
       "description" : "Count of items in each page",
+      "minimum" : 1
+    },
+    "page" : {
+      "type" : "integer",
+      "example" : 1,
+      "description" : "Current page number",
+      "minimum" : 1
+    },
+    "pageCount" : {
+      "type" : "integer",
+      "example" : 1,
+      "description" : "Count of all pages",
+      "minimum" : 1
+    },
+    "totalItems" : {
+      "type" : "integer",
+      "example" : 20,
+      "description" : "Count of total items in all pages",
       "minimum" : 1
     },
     "items" : {
@@ -1010,12 +1028,30 @@ margin-bottom: 20px;
 };
             defs.Offers = {
   "type" : "object",
-  "required" : [ "items", "pageSize" ],
+  "required" : [ "items", "page", "pageCount", "pageSize", "totalItems" ],
   "properties" : {
     "pageSize" : {
       "type" : "integer",
       "example" : 20,
       "description" : "Count of items in each page",
+      "minimum" : 1
+    },
+    "page" : {
+      "type" : "integer",
+      "example" : 1,
+      "description" : "Current page number",
+      "minimum" : 1
+    },
+    "pageCount" : {
+      "type" : "integer",
+      "example" : 1,
+      "description" : "Count of all pages",
+      "minimum" : 1
+    },
+    "totalItems" : {
+      "type" : "integer",
+      "example" : 20,
+      "description" : "Count of total items in all pages",
       "minimum" : 1
     },
     "items" : {
@@ -1167,7 +1203,7 @@ margin-bottom: 20px;
             <h2 id="welcome-to-apidoc">API and SDK Documentation</h2>
               <div class="app-desc">Version: 1.0.0</div>
             <hr>
-            <div><p>This is an integration API between Eurowag Digital Freight Forwarding system and external freight forwarding systems.</p>
+            <div><p>This is an integration API between Eurowag Digital Freight Forwarding system and external freight exchange systems.</p>
 <hr />
 <p><strong>Endpoints are implemented on the side of DFF.</strong></p>
 </div>
@@ -2795,7 +2831,7 @@ $(document).ready(function() {
           </div>
           <div id="generator">
             <div class="content">
-              Generated 2018-09-12T12:28:48.646Z
+              Generated 2018-09-12T12:41:04.712Z
             </div>
           </div>
       </div>
