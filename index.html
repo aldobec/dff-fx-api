@@ -896,10 +896,10 @@ margin-bottom: 20px;
       "description" : "Load weight in kilograms (kg)",
       "minimum" : 0
     },
-    "isLessThanTruckLoad" : {
+    "isPartialLoadAvailable" : {
       "type" : "boolean",
       "example" : false,
-      "description" : "Load is less than truck load and can be transferred with other goods",
+      "description" : "Load can be transferred with other goods",
       "default" : false
     },
     "isLiftRequired" : {
@@ -955,13 +955,13 @@ margin-bottom: 20px;
       "type" : "string",
       "example" : "mega",
       "description" : "Truck body required for the transport",
-      "enum" : [ "tent", "isotherm", "box-truck", "spacious", "other", "car-transporter", "double-trailer", "van", "mega", "coilmulde", "walking-floor", "low-suspension", "flatbed", "chemical-tanker", "food-tanker", "petroleum-tanker", "gas-tanker", "log-trailer", "oversized-cargo", "hook-lift", "container-20-40", "dump-truck", "koffer", "swap-body-system", "jumbo", "cooler", "curtainsider", "tanker", "silos", "removal-truck" ]
+      "enum" : [ "box", "van", "flatbed", "dump", "curtain-sider", "mega", "log", "refrigerator", "tanker", "chemical-tanker", "food-tanker", "petroleum-tanker", "gas-tanker", "silo", "car-transporter", "coil-transporter", "container-transporter", "walking-floor", "low-suspension", "oversized-cargo", "other" ]
     },
     "typeOfLoad" : {
       "type" : "string",
       "example" : "cubic",
       "description" : "Type of transferred goods",
-      "enum" : [ "full-truck-standard", "full-truck-mega", "cubic", "bag", "item", "envelope", "box", "package", "cardboard", "timber", "roll", "barrel", "other" ]
+      "enum" : [ "full-truck-standard", "full-truck-mega", "cubic", "bag", "item", "envelope", "box", "package", "cardboard", "timber", "roll", "barrel", "coil", "gas", "liquid", "powder", "pallet", "container", "other" ]
     }
   }
 };
@@ -1203,7 +1203,7 @@ margin-bottom: 20px;
             <h2 id="welcome-to-apidoc">API and SDK Documentation</h2>
               <div class="app-desc">Version: 1.0.0</div>
             <hr>
-            <div><p>This is an integration API between Eurowag Digital Freight Forwarding system and external freight exchange systems.</p>
+            <div><p>This is an integration API between Eurowag Digital Freight Forwarding system and external freight exchange systems for synchronizing transport offering companies and transport offers.</p>
 <hr />
 <p><strong>Endpoints are implemented on the side of DFF.</strong></p>
 </div>
@@ -1221,7 +1221,7 @@ margin-bottom: 20px;
                         <div class="pull-right"></div>
                         <div class="clearfix"></div>
                         <p></p>
-                        <p class="marked">This method should be used by freight exchange system to provide offering companies to DFF customers. There is no need to send the whole list everytime when company changes. Existing companies will be updated and new companies will be added. Companies deleted before will be added again.</p>
+                        <p class="marked">This method should be used by freight exchange system to provide transport offering companies to DFF customers. There is no need to send the whole list everytime when a company changes. Existing companies will be updated and new companies will be added. Companies deleted before will be added again.</p>
                         <p></p>
                         <br />
                         <pre class="prettyprint language-html prettyprinted" data-type="post"><code><span class="pln">/companies</span></code></pre>
@@ -2831,7 +2831,7 @@ $(document).ready(function() {
           </div>
           <div id="generator">
             <div class="content">
-              Generated 2018-09-12T12:41:04.712Z
+              Generated 2018-09-13T08:00:03.722Z
             </div>
           </div>
       </div>
